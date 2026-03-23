@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finora - Política de Privacidade</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a2e;
+            background: #f8f9fa;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+            color: #1a1a2e;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            color: #1a1a2e;
+        }
+        p, li {
+            color: #444;
+            margin-bottom: 0.6rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 0.6rem 0.8rem;
+            text-align: left;
+        }
+        th {
+            background: #f0f0f5;
+            font-weight: 600;
+        }
+        .contact {
+            background: #f0f0f5;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        .contact a { color: #5c6bc0; }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+        .lang-switch a {
+            color: #5c6bc0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        .lang-switch a:hover { text-decoration: underline; }
+        .en { display: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch">
+        <a onclick="toggleLang()"><span id="lang-label">English</span></a>
+    </div>
+
+    <!-- PORTUGUES -->
+    <div class="pt">
+        <h1>Politica de Privacidade</h1>
+        <p class="subtitle">Finora &mdash; Ultima atualizacao: 17 de marco de 2026</p>
+
+        <h2>1. Introducao</h2>
+        <p>O Finora e um aplicativo de gestao financeira pessoal. Esta politica explica quais dados coletamos, como os utilizamos e quais sao seus direitos. Ao usar o Finora, voce concorda com esta politica.</p>
+
+        <h2>2. Dados que coletamos</h2>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.1 Dados da conta</h3>
+        <ul>
+            <li>Endereco de e-mail</li>
+            <li>Nome de exibicao (opcional)</li>
+            <li>Credenciais de login via Google ou Apple (quando voce opta pelo login social)</li>
+        </ul>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.2 Dados financeiros</h3>
+        <ul>
+            <li>Contas bancarias (nome, tipo, saldo, moeda)</li>
+            <li>Transacoes (nome, valor, data, categoria, notas)</li>
+            <li>Categorias personalizadas</li>
+            <li>Regras de recorrencia</li>
+            <li>Transferencias entre contas</li>
+        </ul>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.3 Dados do dispositivo (apenas em relatorios de bug)</h3>
+        <ul>
+            <li>Plataforma e versao do sistema operacional</li>
+            <li>Versao do aplicativo</li>
+            <li>Modelo do dispositivo</li>
+        </ul>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.4 Dados de assinatura</h3>
+        <ul>
+            <li>Status do plano (gratuito ou premium)</li>
+            <li>Recibos de compra da App Store ou Google Play (para verificacao)</li>
+        </ul>
+
+        <h2>3. Como usamos seus dados</h2>
+        <table>
+            <tr><th>Finalidade</th><th>Dados utilizados</th></tr>
+            <tr><td>Autenticacao e gerenciamento da conta</td><td>E-mail, nome, credenciais OAuth</td></tr>
+            <tr><td>Funcionalidades do app (gestao financeira)</td><td>Contas, transacoes, categorias</td></tr>
+            <tr><td>Sincronizacao na nuvem (opcional)</td><td>Todos os dados financeiros</td></tr>
+            <tr><td>Verificacao de assinatura</td><td>Recibos de compra</td></tr>
+            <tr><td>Suporte e melhoria do app</td><td>Relatorios de bug</td></tr>
+            <tr><td>Exibicao de anuncios (apenas plano gratuito)</td><td>Dados padrao de publicidade (Google AdMob)</td></tr>
+            <tr><td>Conversao de moedas</td><td>Codigo da moeda (sem dados pessoais)</td></tr>
+        </table>
+
+        <h2>4. Servicos de terceiros</h2>
+        <table>
+            <tr><th>Servico</th><th>Finalidade</th><th>Dados compartilhados</th></tr>
+            <tr><td>Supabase</td><td>Autenticacao e armazenamento</td><td>E-mail, dados financeiros</td></tr>
+            <tr><td>Google AdMob</td><td>Anuncios (apenas plano gratuito)</td><td>Dados padrao de publicidade</td></tr>
+            <tr><td>Apple / Google IAP</td><td>Assinaturas</td><td>Recibos de compra</td></tr>
+            <tr><td>exchangerate-api.com</td><td>Taxas de cambio</td><td>Codigo da moeda base</td></tr>
+            <tr><td>Google / Apple OAuth</td><td>Login social</td><td>E-mail e perfil (escopo padrao)</td></tr>
+        </table>
+
+        <p><strong>Nao utilizamos</strong> servicos de analytics, rastreamento ou crash reporting.</p>
+
+        <h2>5. Armazenamento e seguranca</h2>
+        <ul>
+            <li>Seus dados financeiros sao armazenados localmente no dispositivo em um banco SQLite protegido pelo sandbox do sistema operacional.</li>
+            <li>Se voce optar pela sincronizacao na nuvem, os dados sao armazenados nos servidores da Supabase.</li>
+            <li>Tokens de autenticacao sao armazenados de forma segura usando armazenamento criptografado do dispositivo.</li>
+            <li>Senhas nunca sao armazenadas em texto plano.</li>
+            <li>O app suporta autenticacao biometrica (Face ID / Touch ID) como camada adicional de seguranca.</li>
+        </ul>
+
+        <h2>6. Seus direitos</h2>
+        <ul>
+            <li><strong>Acesso:</strong> Todos os seus dados estao visiveis dentro do app.</li>
+            <li><strong>Exclusao:</strong> Voce pode excluir sua conta e todos os dados associados a qualquer momento nas configuracoes do app.</li>
+            <li><strong>Uso local:</strong> Voce pode usar o app sem sincronizacao na nuvem, mantendo todos os dados apenas no seu dispositivo.</li>
+            <li><strong>Portabilidade:</strong> Usuarios premium podem exportar seus dados em formato CSV.</li>
+        </ul>
+
+        <h2>7. Publicidade</h2>
+        <p>Usuarios do plano gratuito podem ver anuncios em banner fornecidos pelo Google AdMob. O AdMob pode coletar identificadores do dispositivo e dados de preferencia de publicidade conforme a <a href="https://policies.google.com/privacy" target="_blank">Politica de Privacidade do Google</a>. Usuarios premium nao veem anuncios.</p>
+
+        <h2>8. Menores de idade</h2>
+        <p>O Finora nao e direcionado a menores de 13 anos. Nao coletamos intencionalmente dados de criancas. Se voce acredita que uma crianca nos forneceu dados pessoais, entre em contato conosco.</p>
+
+        <h2>9. Alteracoes nesta politica</h2>
+        <p>Podemos atualizar esta politica periodicamente. Notificaremos sobre mudancas significativas por meio do app ou por e-mail. O uso continuado do app apos as alteracoes constitui aceitacao da politica atualizada.</p>
+
+        <h2>10. Contato</h2>
+        <div class="contact">
+            <p>Se voce tiver duvidas sobre esta politica, entre em contato:</p>
+            <p><strong>E-mail:</strong> <a href="mailto:support@finora.app">support@finora.app</a></p>
+        </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="en">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Finora &mdash; Last updated: March 17, 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>Finora is a personal finance management app. This policy explains what data we collect, how we use it, and what your rights are. By using Finora, you agree to this policy.</p>
+
+        <h2>2. Data we collect</h2>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.1 Account data</h3>
+        <ul>
+            <li>Email address</li>
+            <li>Display name (optional)</li>
+            <li>Login credentials via Google or Apple (when you choose social login)</li>
+        </ul>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.2 Financial data</h3>
+        <ul>
+            <li>Bank accounts (name, type, balance, currency)</li>
+            <li>Transactions (name, amount, date, category, notes)</li>
+            <li>Custom categories</li>
+            <li>Recurrence rules</li>
+            <li>Transfers between accounts</li>
+        </ul>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.3 Device data (bug reports only)</h3>
+        <ul>
+            <li>Platform and OS version</li>
+            <li>App version</li>
+            <li>Device model</li>
+        </ul>
+
+        <h3 style="font-size:1rem; margin-top:1rem; margin-bottom:0.5rem;">2.4 Subscription data</h3>
+        <ul>
+            <li>Plan status (free or premium)</li>
+            <li>App Store or Google Play purchase receipts (for verification)</li>
+        </ul>
+
+        <h2>3. How we use your data</h2>
+        <table>
+            <tr><th>Purpose</th><th>Data used</th></tr>
+            <tr><td>Authentication and account management</td><td>Email, name, OAuth credentials</td></tr>
+            <tr><td>App features (financial management)</td><td>Accounts, transactions, categories</td></tr>
+            <tr><td>Cloud sync (optional)</td><td>All financial data</td></tr>
+            <tr><td>Subscription verification</td><td>Purchase receipts</td></tr>
+            <tr><td>Support and app improvement</td><td>Bug reports</td></tr>
+            <tr><td>Ads display (free plan only)</td><td>Standard advertising data (Google AdMob)</td></tr>
+            <tr><td>Currency conversion</td><td>Currency code (no personal data)</td></tr>
+        </table>
+
+        <h2>4. Third-party services</h2>
+        <table>
+            <tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr>
+            <tr><td>Supabase</td><td>Authentication and storage</td><td>Email, financial data</td></tr>
+            <tr><td>Google AdMob</td><td>Ads (free plan only)</td><td>Standard advertising data</td></tr>
+            <tr><td>Apple / Google IAP</td><td>Subscriptions</td><td>Purchase receipts</td></tr>
+            <tr><td>exchangerate-api.com</td><td>Exchange rates</td><td>Base currency code</td></tr>
+            <tr><td>Google / Apple OAuth</td><td>Social login</td><td>Email and profile (standard scope)</td></tr>
+        </table>
+
+        <p><strong>We do not use</strong> analytics, tracking, or crash reporting services.</p>
+
+        <h2>5. Storage and security</h2>
+        <ul>
+            <li>Your financial data is stored locally on your device in a SQLite database protected by the OS sandbox.</li>
+            <li>If you opt in to cloud sync, data is stored on Supabase servers.</li>
+            <li>Authentication tokens are securely stored using the device's encrypted storage.</li>
+            <li>Passwords are never stored in plaintext.</li>
+            <li>The app supports biometric authentication (Face ID / Touch ID) as an additional security layer.</li>
+        </ul>
+
+        <h2>6. Your rights</h2>
+        <ul>
+            <li><strong>Access:</strong> All your data is visible within the app.</li>
+            <li><strong>Deletion:</strong> You can delete your account and all associated data at any time from the app settings.</li>
+            <li><strong>Local use:</strong> You can use the app without cloud sync, keeping all data only on your device.</li>
+            <li><strong>Portability:</strong> Premium users can export their data in CSV format.</li>
+        </ul>
+
+        <h2>7. Advertising</h2>
+        <p>Free plan users may see banner ads served by Google AdMob. AdMob may collect device identifiers and advertising preference data per <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. Premium users see no ads.</p>
+
+        <h2>8. Children</h2>
+        <p>Finora is not directed to children under 13. We do not knowingly collect data from children. If you believe a child has provided us with personal data, please contact us.</p>
+
+        <h2>9. Changes to this policy</h2>
+        <p>We may update this policy periodically. We will notify you of significant changes through the app or by email. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>10. Contact</h2>
+        <div class="contact">
+            <p>If you have questions about this policy, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@finora.app">support@finora.app</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleLang() {
+        const pt = document.querySelector('.pt');
+        const en = document.querySelector('.en');
+        const label = document.getElementById('lang-label');
+        if (pt.style.display === 'none') {
+            pt.style.display = 'block';
+            en.style.display = 'none';
+            label.textContent = 'English';
+        } else {
+            pt.style.display = 'none';
+            en.style.display = 'block';
+            label.textContent = 'Portugues';
+        }
+    }
+</script>
+</body>
+</html>
