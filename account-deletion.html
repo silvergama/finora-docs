@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finora - Exclusão de Conta e Dados</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a2e;
+            background: #f8f9fa;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+            color: #1a1a2e;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            color: #1a1a2e;
+        }
+        p, li {
+            color: #444;
+            margin-bottom: 0.6rem;
+        }
+        ul, ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .steps {
+            background: #f0f0f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .steps ol {
+            margin-bottom: 0;
+        }
+        .steps li {
+            margin-bottom: 0.8rem;
+        }
+        .steps li:last-child {
+            margin-bottom: 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem 1.2rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+        .warning p {
+            color: #664d03;
+            margin-bottom: 0;
+        }
+        .contact {
+            background: #f0f0f5;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        .contact a { color: #5c6bc0; }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+        .lang-switch a {
+            color: #5c6bc0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        .lang-switch a:hover { text-decoration: underline; }
+        .en { display: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch">
+        <a onclick="toggleLang()"><span id="lang-label">English</span></a>
+    </div>
+
+    <!-- PORTUGUES -->
+    <div class="pt">
+        <h1>Exclusao de Conta e Dados</h1>
+        <p class="subtitle">Finora &mdash; Ultima atualizacao: 23 de marco de 2026</p>
+
+        <h2>Como excluir sua conta</h2>
+        <p>Voce pode excluir sua conta e todos os dados associados diretamente pelo aplicativo Finora. A exclusao e permanente e nao pode ser desfeita.</p>
+
+        <div class="steps">
+            <ol>
+                <li>Abra o aplicativo <strong>Finora</strong>.</li>
+                <li>Va em <strong>Configuracoes</strong> (icone de engrenagem).</li>
+                <li>Toque em <strong>Perfil</strong>.</li>
+                <li>Role ate o final e toque em <strong>Excluir conta</strong>.</li>
+                <li>Confirme a exclusao quando solicitado.</li>
+            </ol>
+        </div>
+
+        <h2>Dados que serao excluidos</h2>
+        <p>Ao excluir sua conta, <strong>todos</strong> os seguintes dados serao removidos permanentemente dos nossos servidores:</p>
+        <ul>
+            <li>Informacoes do perfil (e-mail, nome)</li>
+            <li>Contas bancarias e saldos</li>
+            <li>Transacoes e lancamentos financeiros</li>
+            <li>Categorias personalizadas</li>
+            <li>Regras de recorrencia</li>
+            <li>Historico de compras no app</li>
+            <li>Relatorios de bug enviados</li>
+        </ul>
+
+        <div class="warning">
+            <p><strong>Atencao:</strong> Esta acao e irreversivel. Recomendamos exportar seus dados (CSV) antes de excluir a conta, caso deseje manter um historico.</p>
+        </div>
+
+        <h2>Dados locais</h2>
+        <p>Os dados armazenados localmente no seu dispositivo (banco SQLite) nao sao afetados pela exclusao da conta na nuvem. Para remover os dados locais, desinstale o aplicativo.</p>
+
+        <h2>Prazo de exclusao</h2>
+        <p>A exclusao dos dados e realizada imediatamente apos a confirmacao. Nao ha periodo de retencao apos a solicitacao.</p>
+
+        <h2>Solicitar exclusao por e-mail</h2>
+        <p>Se voce nao conseguir acessar o aplicativo, pode solicitar a exclusao da sua conta enviando um e-mail para:</p>
+        <div class="contact">
+            <p><strong>E-mail:</strong> <a href="mailto:support@finora.app?subject=Solicita%C3%A7%C3%A3o%20de%20exclus%C3%A3o%20de%20conta">support@finora.app</a></p>
+            <p>Inclua o endereco de e-mail associado a sua conta Finora. Responderemos em ate 48 horas.</p>
+        </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="en">
+        <h1>Account and Data Deletion</h1>
+        <p class="subtitle">Finora &mdash; Last updated: March 23, 2026</p>
+
+        <h2>How to delete your account</h2>
+        <p>You can delete your account and all associated data directly from the Finora app. Deletion is permanent and cannot be undone.</p>
+
+        <div class="steps">
+            <ol>
+                <li>Open the <strong>Finora</strong> app.</li>
+                <li>Go to <strong>Settings</strong> (gear icon).</li>
+                <li>Tap <strong>Profile</strong>.</li>
+                <li>Scroll to the bottom and tap <strong>Delete account</strong>.</li>
+                <li>Confirm the deletion when prompted.</li>
+            </ol>
+        </div>
+
+        <h2>Data that will be deleted</h2>
+        <p>When you delete your account, <strong>all</strong> of the following data will be permanently removed from our servers:</p>
+        <ul>
+            <li>Profile information (email, name)</li>
+            <li>Bank accounts and balances</li>
+            <li>Transactions and financial entries</li>
+            <li>Custom categories</li>
+            <li>Recurrence rules</li>
+            <li>In-app purchase history</li>
+            <li>Bug reports submitted</li>
+        </ul>
+
+        <div class="warning">
+            <p><strong>Warning:</strong> This action is irreversible. We recommend exporting your data (CSV) before deleting your account if you want to keep a record.</p>
+        </div>
+
+        <h2>Local data</h2>
+        <p>Data stored locally on your device (SQLite database) is not affected by cloud account deletion. To remove local data, uninstall the app.</p>
+
+        <h2>Deletion timeline</h2>
+        <p>Data deletion is performed immediately upon confirmation. There is no retention period after the request.</p>
+
+        <h2>Request deletion via email</h2>
+        <p>If you cannot access the app, you can request account deletion by sending an email to:</p>
+        <div class="contact">
+            <p><strong>Email:</strong> <a href="mailto:support@finora.app?subject=Account%20deletion%20request">support@finora.app</a></p>
+            <p>Include the email address associated with your Finora account. We will respond within 48 hours.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleLang() {
+        const pt = document.querySelector('.pt');
+        const en = document.querySelector('.en');
+        const label = document.getElementById('lang-label');
+        if (pt.style.display === 'none') {
+            pt.style.display = 'block';
+            en.style.display = 'none';
+            label.textContent = 'English';
+        } else {
+            pt.style.display = 'none';
+            en.style.display = 'block';
+            label.textContent = 'Portugues';
+        }
+    }
+</script>
+</body>
+</html>
